@@ -2,7 +2,8 @@ Classes e suas Relações
 
 1. JogoVelha:
    - Principal classe responsável pela mecânica do jogo.
-   - Contém dois jogadores (JogadorHumano ou JogadorComputador) e um Tabuleiro.
+   - Contém dois jogadores (JogadorHumano ou JogadorComputador) - relação de agregação.
+   - Contém um Tabuleiro – relação de composição.
    - Usa o método jogador_atual() para alternar entre os jogadores.
    - Verifica o fim do jogo com checar_fim_de_jogo().
 
@@ -21,5 +22,5 @@ Classes e suas Relações
 
 5. JogadorComputador:
    - Subclasse de Jogador.
-   - Implementa a jogada do computador com base em uma estratégia (atualmente "aleatoria").
+   - Implementa a jogada do computador com base em uma estratégia (atualmente "aleatória").
    - O método fazer_jogada() decide a jogada com base na estratégia definida na inicialização.
