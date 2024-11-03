@@ -1,0 +1,25 @@
+Classes e suas Relações
+
+1. JogoVelha:
+   - Principal classe responsável pela mecânica do jogo.
+   - Contém dois jogadores (JogadorHumano ou JogadorComputador) e um Tabuleiro.
+   - Usa o método jogador_atual() para alternar entre os jogadores.
+   - Verifica o fim do jogo com checar_fim_de_jogo().
+
+2. Tabuleiro:
+   - Representa o estado do tabuleiro do jogo.
+   - Possui um método para marcar jogadas e outro para imprimir o tabuleiro.
+   - Cada casa do tabuleiro pode conter um símbolo ("X" ou "O") ou estar vazia.
+
+3. Jogador (abstrato):
+   - Define a interface para qualquer jogador (humano ou computador).
+   - Possui um método abstrato fazer_jogada(), que deve ser implementado nas subclasses.
+
+4. JogadorHumano:
+   - Subclasse de Jogador.
+   - O método fazer_jogada() pede a entrada do jogador humano.
+
+5. JogadorComputador:
+   - Subclasse de Jogador.
+   - Implementa a jogada do computador com base em uma estratégia (atualmente "aleatoria").
+   - O método fazer_jogada() decide a jogada com base na estratégia definida na inicialização.
